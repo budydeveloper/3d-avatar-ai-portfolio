@@ -1,5 +1,5 @@
-import React from 'react';
-import { Box, Typography, useTheme } from '@mui/material';
+import React from "react";
+import { Box, Typography, useTheme } from "@mui/material";
 
 const Footer = () => {
   const theme = useTheme();
@@ -8,15 +8,19 @@ const Footer = () => {
     <Box
       component="footer"
       sx={{
-        textAlign: 'center',
-        padding: '15px',
+        textAlign: "center",
+        padding: "15px",
         backgroundColor: theme.palette.primary.main,
         color: theme.palette.primary.contrastText,
-        width: '100%',
+        width: "100%",
       }}
     >
       <Typography variant="body2">
-        © {new Date().getFullYear()} My 3D avatar AI portfolio. All rights reserved.
+        © {new Date().getFullYear()} - 3D avatar AI portfolio. All rights reserved.
+ 
+      </Typography>
+      <Typography variant="body2">
+        Made with ❤️ by Cristian Vega
       </Typography>
     </Box>
   );

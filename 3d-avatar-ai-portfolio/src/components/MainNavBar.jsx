@@ -22,7 +22,8 @@ const MainNavBar = () => {
     <AppBar
       position="static"
       sx={{
-        backgroundColor: theme.palette.primary.main, // Color principal del tema
+        backgroundColor: '#00796b', // Color de fondo oscuro
+        boxShadow: '0 2px 10px rgba(0, 0, 0, 0.2)', // Sombra para la barra
       }}
     >
       <Toolbar>
@@ -32,7 +33,7 @@ const MainNavBar = () => {
           component="div"
           sx={{
             flexGrow: 1,
-            color: theme.palette.primary.contrastText, // Texto en color de contraste
+            color: '#ffffff', // Color blanco para el texto
           }}
         >
           3D Avatar AI Portfolio
@@ -46,7 +47,6 @@ const MainNavBar = () => {
               color="inherit"
               edge="end"
               onClick={() => setOpenDrawer(true)}
-              sx={{ display: { md: 'none' } }}
             >
               <MenuIcon />
             </IconButton>
@@ -62,11 +62,11 @@ const MainNavBar = () => {
                       onClick={() => setOpenDrawer(false)}
                       sx={{
                         '&:hover': {
-                          backgroundColor: theme.palette.secondary.light, // Usar color de fondo secundario en hover
+                          backgroundColor: '#004d40', // Hover oscuro
                         },
                       }}
                     >
-                      <ListItemText primary={item.title} sx={{ color: theme.palette.text.secondary }} />
+                      <ListItemText primary={item.title} sx={{ color: '#ffffff' }} />
                     </ListItemButton>
                   </ListItem>
                 ))}
@@ -83,14 +83,14 @@ const MainNavBar = () => {
                 component={Link}
                 to={item.path}
                 sx={{
-                  color: theme.palette.primary.contrastText, // Color del tema que contraste
+                  color: '#ffffff',
                   '&:hover': {
-                    backgroundColor: theme.palette.primary.light, // Hover de los botones
+                    backgroundColor: '#004d40', // Hover oscuro
                   },
                   borderRadius: '20px',
                   margin: '0 5px',
                   padding: '5px 15px',
-                  border: `2px solid ${theme.palette.secondary.main}`, // Borde definido por el tema
+                  border: `2px solid #26a69a`, // Borde más claro
                 }}
               >
                 {item.title}

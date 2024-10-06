@@ -38,7 +38,6 @@ const AvatarViewer = () => {
     const setupScene = (gltf) => {
       const container = containerRef.current;
 
-      // Configuración del renderer
       const renderer = new THREE.WebGLRenderer({
         antialias: true,
         alpha: true,
@@ -51,7 +50,6 @@ const AvatarViewer = () => {
 
       container.appendChild(renderer.domElement);
 
-      // Configuración de la cámara
       const camera = new THREE.PerspectiveCamera(
         45,
         container.clientWidth / container.clientHeight
@@ -94,7 +92,6 @@ const AvatarViewer = () => {
       const groundGeometry = new THREE.CylinderGeometry(0.6, 0.6, 0.1, 64);
       const groundMaterial = new THREE.MeshStandardMaterial();
       const groundMesh = new THREE.Mesh(groundGeometry, groundMaterial);
-      //add ed1b76 color to the ground mesh
       groundMaterial.color.setHex(0xed1b76);
       groundMesh.castShadow = false;
       groundMesh.receiveShadow = true;
@@ -172,7 +169,7 @@ const AvatarViewer = () => {
       container
       justifyContent="center"
       alignItems="center"
-      sx={{ height: "auto", marginTop: "-150px" }}
+      sx={{ height: "auto", marginTop: "0px" }} // Ajustar marginTop a 0px
     >
       <Grid xs={12} sm={6} md={3}>
         <Box
@@ -183,22 +180,11 @@ const AvatarViewer = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            width: { xs: "200px", sm: "300px", md: "400px" }, // Ancho responsivo basado en el tamaño de pantalla
-            height: { xs: "350px", sm: "400px", md: "600px" }, // Altura responsiva según el tamaño de pantalla
+            width: { xs: "200px", sm: "300px", md: "400px" },
+            height: { xs: "350px", sm: "400px", md: "600px" },
           }}
           ref={containerRef}
-        >
-          {/* Puedes agregar aquí el contenido del avatar, como una imagen o animación */}
-          <div
-            style={{
-              width: "100%",
-              height: "100%",
-              backgroundColor: "lightblue",
-            }}
-          >
-            {/* Placeholder de avatar */}
-          </div>
-        </Box>
+        ></Box>
         {isLoading && (
           <Box sx={{ textAlign: "center", marginTop: "10px" }}>Loading...</Box>
         )}
