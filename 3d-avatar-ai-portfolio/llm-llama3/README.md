@@ -30,8 +30,8 @@ El LLM responde de manera automática a preguntas complejas relacionadas con la 
 
 2. Configuración del modelo Llama
 
-[!IMPORTANT]
-Antes de ejecutar la aplicación, es necesario asegurarse de que el modelo Llama esté instalado y en funcionamiento en el puerto `11434` de tu máquina local.
+> [!IMPORTANT]
+> Antes de ejecutar la aplicación, es necesario asegurarse de que el modelo Llama esté instalado y en funcionamiento en el puerto `11434` de tu máquina local.
 
 1. **Descargar e instalar Ollama**:  
    Visita el siguiente enlace para descargar e instalar Ollama en tu sistema:  
