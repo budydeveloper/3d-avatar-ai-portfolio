@@ -16,12 +16,9 @@ const Footer = () => {
       }}
     >
       <Typography variant="body2">
-        © {new Date().getFullYear()} - 3D avatar AI portfolio. All rights reserved.
- 
+        © {new Date().getFullYear()} - 3D avatar AI portfolio.
       </Typography>
-      <Typography variant="body2">
-        Made with ❤️ by Cristian Vega
-      </Typography>
+      <Typography variant="body2">All rights reserved.</Typography>
     </Box>
   );
 };
