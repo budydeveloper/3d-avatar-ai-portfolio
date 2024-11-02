@@ -1,0 +1,125 @@
+my_voice_dataset/001.wav|ES|ES|La inteligencia artificial cambiará el mundo.
+my_voice_dataset/002.wav|ES|ES|El perro corre por el campo.
+my_voice_dataset/003.wav|ES|ES|Hoy hace un día soleado.
+my_voice_dataset/004.wav|ES|ES|¿Cómo te sientes hoy?
+my_voice_dataset/005.wav|ES|ES|El café de esta mañana estaba muy fuerte.
+my_voice_dataset/006.wav|ES|ES|Voy a dar un paseo por el parque.
+my_voice_dataset/007.wav|ES|ES|¿Puedes ayudarme a mover esta mesa?
+my_voice_dataset/008.wav|ES|ES|Me encanta leer libros de ciencia ficción.
+my_voice_dataset/009.wav|ES|ES|Hoy es un buen día para salir a caminar.
+my_voice_dataset/010.wav|ES|ES|Hace mucho frío afuera, ¿verdad?
+my_voice_dataset/011.wav|ES|ES|La tienda de la esquina cierra a las nueve.
+my_voice_dataset/012.wav|ES|ES|Necesito hacer unas compras para la cena.
+my_voice_dataset/013.wav|ES|ES|Voy a terminar de trabajar a las seis.
+my_voice_dataset/014.wav|ES|ES|Estoy esperando a un amigo.
+my_voice_dataset/015.wav|ES|ES|Podemos encontrarnos en el centro.
+my_voice_dataset/016.wav|ES|ES|Voy a ver una película esta noche.
+my_voice_dataset/017.wav|ES|ES|La capital de España es Madrid.
+my_voice_dataset/018.wav|ES|ES|El océano Atlántico es el segundo más grande del mundo.
+my_voice_dataset/019.wav|ES|ES|Albert Einstein es conocido por la teoría de la relatividad.
+my_voice_dataset/020.wav|ES|ES|Los planetas del sistema solar giran alrededor del sol.
+my_voice_dataset/021.wav|ES|ES|El lenguaje de programación Java es ampliamente utilizado.
+my_voice_dataset/022.wav|ES|ES|La evolución es un proceso de cambio gradual en las especies.
+my_voice_dataset/023.wav|ES|ES|El teléfono móvil se ha convertido en una herramienta esencial.
+my_voice_dataset/024.wav|ES|ES|La inteligencia artificial es un campo en crecimiento.
+my_voice_dataset/025.wav|ES|ES|El Big Data permite analizar grandes volúmenes de información.
+my_voice_dataset/026.wav|ES|ES|El entorno de desarrollo utilizado es IntelliJ IDEA.
+my_voice_dataset/027.wav|ES|ES|La versión del JDK es la 21, con soporte de características modernas.
+my_voice_dataset/028.wav|ES|ES|Se implementó un patrón de diseño basado en microservicios.
+my_voice_dataset/029.wav|ES|ES|El modelo de datos se gestiona a través de un ORM en Java.
+my_voice_dataset/030.wav|ES|ES|La API REST se documenta con OpenAPI y Swagger.
+my_voice_dataset/031.wav|ES|ES|El sistema utiliza RabbitMQ para la comunicación asíncrona.
+my_voice_dataset/032.wav|ES|ES|Los contenedores se orquestan mediante Kubernetes.
+my_voice_dataset/033.wav|ES|ES|Se ha implementado una solución basada en eventos.
+my_voice_dataset/034.wav|ES|ES|Mi número de teléfono es seis, uno, nueve, tres, dos, cuatro.
+my_voice_dataset/035.wav|ES|ES|El dos de noviembre es mi cumpleaños.
+my_voice_dataset/036.wav|ES|ES|Nació el dieciocho de marzo de mil novecientos ochenta y cinco.
+my_voice_dataset/037.wav|ES|ES|La reunión está programada para las dos y media.
+my_voice_dataset/038.wav|ES|ES|Faltan treinta minutos para la conferencia.
+my_voice_dataset/039.wav|ES|ES|La empresa fue fundada en el año dos mil.
+my_voice_dataset/040.wav|ES|ES|El edificio tiene quince pisos.
+my_voice_dataset/041.wav|ES|ES|El producto cuesta trescientos cincuenta y nueve euros.
+my_voice_dataset/042.wav|ES|ES|¿Dónde has dejado las llaves del coche?
+my_voice_dataset/043.wav|ES|ES|¿Cuántos años tienes?
+my_voice_dataset/044.wav|ES|ES|¿Cuál es tu libro favorito?
+my_voice_dataset/045.wav|ES|ES|¿Quién fue el ganador del último partido?
+my_voice_dataset/046.wav|ES|ES|¿Por qué elegiste trabajar en este proyecto?
+my_voice_dataset/047.wav|ES|ES|¿Cuánto tiempo llevas programando en Java?
+my_voice_dataset/048.wav|ES|ES|¿Puedes explicarme el concepto de polimorfismo?
+my_voice_dataset/049.wav|ES|ES|¡Qué sorpresa verte por aquí!
+my_voice_dataset/050.wav|ES|ES|¡No puedo creer que haya pasado tanto tiempo!
+my_voice_dataset/076.wav|ES|ES|El código fuente debe estar bien documentado para facilitar su mantenimiento.
+my_voice_dataset/077.wav|ES|ES|Los vehículos eléctricos están ganando popularidad en todo el mundo.
+my_voice_dataset/078.wav|ES|ES|El lenguaje de programación Python es versátil y fácil de aprender.
+my_voice_dataset/079.wav|ES|ES|La capital de Francia es París.
+my_voice_dataset/080.wav|ES|ES|El software debe ser probado exhaustivamente antes de su lanzamiento.
+my_voice_dataset/081.wav|ES|ES|La realidad aumentada mezcla elementos digitales con el entorno físico.
+my_voice_dataset/082.wav|ES|ES|La memoria RAM es un componente clave en el rendimiento del ordenador.
+my_voice_dataset/083.wav|ES|ES|El servicio fue interrumpido por una actualización de seguridad.
+my_voice_dataset/084.wav|ES|ES|El uso de comentarios en el código ayuda a otros desarrolladores a entenderlo.
+my_voice_dataset/085.wav|ES|ES|La criptografía se utiliza para proteger la información confidencial.
+my_voice_dataset/086.wav|ES|ES|Las redes neuronales se inspiran en el funcionamiento del cerebro humano.
+my_voice_dataset/087.wav|ES|ES|Los contratos inteligentes se ejecutan automáticamente en blockchain.
+my_voice_dataset/088.wav|ES|ES|El coche autónomo utiliza sensores y algoritmos para navegar.
+my_voice_dataset/089.wav|ES|ES|La nube permite el almacenamiento de datos de manera escalable.
+my_voice_dataset/090.wav|ES|ES|El protocolo HTTPS asegura la comunicación entre el navegador y el servidor.
+my_voice_dataset/091.wav|ES|ES|Las aplicaciones móviles deben estar optimizadas para diferentes dispositivos.
+my_voice_dataset/092.wav|ES|ES|La base de datos está estructurada en tablas con filas y columnas.
+my_voice_dataset/093.wav|ES|ES|La primera revolución industrial comenzó en el siglo dieciocho.
+my_voice_dataset/094.wav|ES|ES|La arquitectura de microservicios facilita el desarrollo de aplicaciones escalables.
+my_voice_dataset/095.wav|ES|ES|La función `main` es el punto de entrada en la mayoría de los programas.
+my_voice_dataset/096.wav|ES|ES|El cifrado asimétrico utiliza una clave pública y una clave privada.
+my_voice_dataset/097.wav|ES|ES|El balanceo de carga distribuye el tráfico entre varios servidores.
+my_voice_dataset/098.wav|ES|ES|La latencia es el tiempo que tarda una solicitud en ser procesada.
+my_voice_dataset/099.wav|ES|ES|Los motores de búsqueda utilizan algoritmos para indexar las páginas web.
+my_voice_dataset/100.wav|ES|ES|El protocolo FTP se usa para transferir archivos entre dispositivos.
+my_voice_dataset/101.wav|ES|ES|La energía renovable es fundamental para combatir el cambio climático.
+my_voice_dataset/102.wav|ES|ES|La velocidad del procesador se mide en gigahercios.
+my_voice_dataset/103.wav|ES|ES|El código debe seguir las buenas prácticas de programación.
+my_voice_dataset/104.wav|ES|ES|Las aplicaciones modernas utilizan APIs para comunicarse entre sí.
+my_voice_dataset/105.wav|ES|ES|La inteligencia artificial puede analizar grandes volúmenes de datos rápidamente.
+my_voice_dataset/106.wav|ES|ES|Las plataformas de comercio electrónico están creciendo exponencialmente.
+my_voice_dataset/107.wav|ES|ES|Los sistemas de recomendación utilizan algoritmos de filtrado colaborativo.
+my_voice_dataset/108.wav|ES|ES|La automatización de procesos ayuda a reducir costos en la industria.
+my_voice_dataset/109.wav|ES|ES|El aprendizaje profundo se basa en redes neuronales con múltiples capas.
+my_voice_dataset/110.wav|ES|ES|Los sensores de proximidad detectan objetos cercanos sin contacto físico.
+my_voice_dataset/111.wav|ES|ES|La ciberseguridad es un campo en constante evolución.
+my_voice_dataset/112.wav|ES|ES|El Internet de las Cosas conecta dispositivos inteligentes entre sí.
+my_voice_dataset/113.wav|ES|ES|La gestión de proyectos utiliza metodologías ágiles como Scrum.
+my_voice_dataset/114.wav|ES|ES|Los algoritmos genéticos simulan el proceso de selección natural.
+my_voice_dataset/115.wav|ES|ES|La virtualización permite ejecutar múltiples sistemas operativos en un solo hardware.
+my_voice_dataset/116.wav|ES|ES|El reconocimiento de voz convierte el habla en texto.
+my_voice_dataset/117.wav|ES|ES|Los gráficos por computadora se generan utilizando modelos matemáticos.
+my_voice_dataset/118.wav|ES|ES|La nanotecnología se utiliza para manipular la materia a escala atómica.
+my_voice_dataset/119.wav|ES|ES|El cifrado AES es uno de los más seguros para proteger datos sensibles.
+my_voice_dataset/120.wav|ES|ES|El aprendizaje supervisado utiliza datos etiquetados para entrenar modelos.
+my_voice_dataset/121.wav|ES|ES|La red de suministro debe ser eficiente para reducir los tiempos de entrega.
+my_voice_dataset/122.wav|ES|ES|El correo electrónico sigue siendo una herramienta de comunicación esencial.
+my_voice_dataset/123.wav|ES|ES|Los sistemas embebidos son dispositivos diseñados para realizar tareas específicas.
+my_voice_dataset/124.wav|ES|ES|El desarrollo frontend se centra en la experiencia del usuario.
+my_voice_dataset/125.wav|ES|ES|El uso de `try` y `catch` permite manejar excepciones en el código.
+my_voice_dataset/126.wav|ES|ES|La recursividad se utiliza para resolver problemas complejos de manera simple.
+my_voice_dataset/127.wav|ES|ES|El estándar JSON se usa para intercambiar datos en formato de texto.
+my_voice_dataset/128.wav|ES|ES|El cifrado SSL asegura la transmisión de datos en internet.
+my_voice_dataset/129.wav|ES|ES|El análisis de datos se realiza utilizando herramientas como SQL y Python.
+my_voice_dataset/130.wav|ES|ES|El deep learning es una técnica avanzada de machine learning.
+my_voice_dataset/131.wav|ES|ES|La programación concurrente permite ejecutar múltiples tareas al mismo tiempo.
+my_voice_dataset/132.wav|ES|ES|La computación cuántica promete resolver problemas complejos con rapidez.
+my_voice_dataset/133.wav|ES|ES|El protocolo TCP garantiza la entrega de datos de extremo a extremo.
+my_voice_dataset/134.wav|ES|ES|Las cadenas de bloques registran transacciones de manera descentralizada.
+my_voice_dataset/135.wav|ES|ES|La inteligencia artificial transformará la industria de la salud.
+my_voice_dataset/136.wav|ES|ES|El aprendizaje no supervisado encuentra patrones en los datos sin etiquetas.
+my_voice_dataset/137.wav|ES|ES|Las bases de datos NoSQL almacenan datos no estructurados.
+my_voice_dataset/138.wav|ES|ES|La metodología DevOps promueve la colaboración entre equipos de desarrollo y operaciones.
+my_voice_dataset/139.wav|ES|ES|La biblioteca `pandas` facilita el análisis de datos en Python.
+my_voice_dataset/140.wav|ES|ES|La pila y el heap son dos áreas de memoria usadas en los programas.
+my_voice_dataset/141.wav|ES|ES|El diseño responsivo adapta las páginas web a diferentes tamaños de pantalla.
+my_voice_dataset/142.wav|ES|ES|El almacenamiento en caché reduce la latencia en aplicaciones web.
+my_voice_dataset/143.wav|ES|ES|El protocolo DNS traduce nombres de dominio a direcciones IP.
+my_voice_dataset/144.wav|ES|ES|El desarrollo de videojuegos utiliza motores gráficos como Unity y Unreal.
+my_voice_dataset/145.wav|ES|ES|El procesamiento de lenguaje natural permite a las máquinas entender el habla humana.
+my_voice_dataset/146.wav|ES|ES|El protocolo MQTT se usa en aplicaciones de Internet de las Cosas.
+my_voice_dataset/147.wav|ES|ES|La tokenización protege los datos confidenciales al sustituirlos por identificadores únicos.
+my_voice_dataset/148.wav|ES|ES|El monitoreo del sistema asegura la disponibilidad de las aplicaciones.
+my_voice_dataset/149.wav|ES|ES|La arquitectura cliente-servidor define la relación entre el servidor y el cliente.
+my_voice_dataset/150.wav|ES|ES|El protocolo SMTP se usa para enviar correos electrónicos.

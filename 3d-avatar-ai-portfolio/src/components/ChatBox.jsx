@@ -12,6 +12,7 @@ import {
 import DeleteIcon from "@mui/icons-material/Delete";
 import SendIcon from "@mui/icons-material/Send";
 import VolumeUpIcon from "@mui/icons-material/VolumeUp"; // Icono para text-to-speech
+import axios from "axios";
 
 const ChatBox = () => {
   const theme = useTheme();
@@ -56,26 +57,45 @@ const ChatBox = () => {
   };
 
   const handleAiResponse = async (newMessages) => {
-    const aiMessage = generateAiResponse();
-    const newMessage = {
-      text: aiMessage,
-      id: messageId + 1,
-      user: "Cristian Vega",
-    };
-    setMessages([...newMessages, newMessage]);
-    setMessageId((prevId) => prevId + 2);
+    try {
+      const response = await axios.post(
+        "http://localhost:5000/ask",
+        {
+          question: inputValue,
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+  
+      // Registrar la respuesta en consola
+      console.log("Respuesta de la API:", response.data);
+  
+      // Extraer solo el mensaje de texto del campo 'response'
+      const aiMessage = response.data.response; // Obtener directamente el texto del campo 'response'
+  
+      // Crear un nuevo mensaje con solo el texto de la respuesta
+      const newMessage = {
+        text: aiMessage,
+        id: messageId + 1,
+        user: "Cristian Vega",
+      };
+  
+      // Actualizar el estado con los nuevos mensajes
+      setMessages([...newMessages, newMessage]);
+      setMessageId((prevId) => prevId + 2);
+  
+      // Llamar a handleTextToSpeech para generar el audio de la respuesta
+      handleTextToSpeech(aiMessage);
+    } catch (error) {
+      console.error("Error al obtener respuesta de la API:", error);
+    }
   };
+  
+  
 
-  const generateAiResponse = () => {
-    const responses = [
-      "Hola, ¿cómo puedo ayudarte hoy?",
-      "Entiendo, cuéntame más.",
-      "¡Eso suena interesante!",
-      "Estoy aquí para ayudarte.",
-      "Gracias por compartir eso conmigo.",
-    ];
-    return responses[Math.floor(Math.random() * responses.length)];
-  };
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
@@ -87,9 +107,39 @@ const ChatBox = () => {
     }
   };
 
-  const handleTextToSpeech = (text) => {
-    const utterance = new SpeechSynthesisUtterance(text);
-    window.speechSynthesis.speak(utterance);
+  let isPlaying = false;  // Bandera para indicar si el audio está en reproducción
+
+  const handleTextToSpeech = async (text) => {
+    // Evitar que se inicie la reproducción si ya hay un audio en curso
+    if (isPlaying) return;
+  
+    try {
+      isPlaying = true;  // Indicar que la reproducción ha comenzado
+  
+      // Enviar el texto a la API de generación de audio de MeloTTS
+      const response = await axios.post(
+        "http://localhost:5001/generate-audio", // URL de la API de MeloTTS
+        { text: text }, // Pasar el texto como parte del cuerpo de la solicitud
+        { responseType: "blob" } // Especificar que la respuesta es un blob (archivo de audio)
+      );
+  
+      // Crear una URL para el archivo de audio
+      const audioUrl = URL.createObjectURL(response.data);
+  
+      // Reproducir el archivo de audio generado
+      const audio = new Audio(audioUrl);
+  
+      // Escuchar el evento 'ended' para saber cuándo finaliza la reproducción
+      audio.onended = () => {
+        isPlaying = false;  // Restablecer la bandera cuando el audio termine
+      };
+  
+      // Reproducir el audio
+      audio.play();
+    } catch (error) {
+      console.error("Error al generar el audio con la API de MeloTTS:", error);
+      isPlaying = false;  // Restablecer la bandera en caso de error
+    }
   };
 
   return (
@@ -193,8 +243,8 @@ const ChatBox = () => {
               {message.user === "Cristian Vega" && (
                 <IconButton
                   onClick={() => handleTextToSpeech(message.text)}
-                  sx={{ 
-                    position: "absolute", 
+                  sx={{
+                    position: "absolute",
                     right: 5, // Ajustar a la derecha
                     bottom: 5, // Ajustar hacia abajo
                     color: theme.palette.primary.main,
@@ -258,7 +308,13 @@ const ChatBox = () => {
           }}
           onClick={handleClearChat}
         >
-          {isMobile ? <DeleteIcon /> : <>Clean <DeleteIcon sx={{ ml: 1 }} /></>}
+          {isMobile ? (
+            <DeleteIcon />
+          ) : (
+            <>
+              Clean <DeleteIcon sx={{ ml: 1 }} />
+            </>
+          )}
         </Button>
 
         <Button
@@ -277,7 +333,13 @@ const ChatBox = () => {
           }}
           onClick={handleSend}
         >
-          {isMobile ? <SendIcon /> : <>Enviar <SendIcon sx={{ ml: 1 }} /></>}
+          {isMobile ? (
+            <SendIcon />
+          ) : (
+            <>
+              Enviar <SendIcon sx={{ ml: 1 }} />
+            </>
+          )}
         </Button>
       </Box>
     </Box>
